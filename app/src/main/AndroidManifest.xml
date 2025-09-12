@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.indieeat">
+
+    <!-- ✅ Permissions go OUTSIDE <application> -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo1_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo1_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IndieEat"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="31">
+
+
+        <!-- Splash screen -->
+        <activity android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:exported="true"/>
+        <activity android:name=".LoginActivity" android:exported="true"/>
+        <activity android:name=".SignupActivity" android:exported="true"/>
+        <activity android:name=".HomepageActivity"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".RecognitionActivity"/>
+        <activity android:name=".HomepageActivity2" />
+        <activity android:name=".AdminProfileActivity" />
+        <activity android:name=".AdminReportActivity" />
+
+
+        <!-- ✅ FileProvider correctly configured -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

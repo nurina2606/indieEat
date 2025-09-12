@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="gray">#A9A9A9</color>
+    <color name="green">#23FF2C</color>
+    <color name="red">#FF0000</color>
+    <color name="purple_200">#8E03FF</color>
+    <color name="pink">#FF03BC</color>
+    <color name="blue">#03A9F4</color>
+    <color name="yellow">#FFE500</color>
+    <color name="light_gray">#E0E0E0</color> <!-- background track -->
+
+
+
+    <color name="colorPrimary">#424242</color>           <!-- dark gray -->
+<color name="colorPrimaryVariant">#BFBFBF</color>    <!-- darker gray -->
+<color name="colorOnPrimary">#FFFFFF</color>         <!-- text on primary -->
+<color name="colorSecondary">#9E9E9E</color>         <!-- medium gray -->
+<color name="colorOnSecondary">#000000</color>
+<color name="backgroundColor">#F5F5F5</color>        <!-- light gray -->
+</resources>
